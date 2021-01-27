@@ -1,0 +1,80 @@
+* {
+  margin-left: 0;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka One", cursive;
+  background-color: #add8e6;
+
+}
+
+header {
+  padding: 10px;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main {
+  margin: 20px;
+}
+
+.cards {
+  padding: 10px 0 0;
+  text-align: center;
+}
+.row {
+  margin-bottom: 10px;
+}
+.card-element {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  border-radius: 10px;
+  background-color: white;
+  background-image: url("img/pattern.png");
+  background-repeat: repeat;
+  background-size: contain;
+}
+.card-element img {
+  width: 100%;
+  visibility: hidden;
+}
+.card-text {
+  display: none;
+}
+
+.card-element.active img,
+.card-element:hover img {
+  /* hover "quando passo il mouse sopra" */
+  visibility: visible;
+}
+.card-element.active .card-text,
+.card-element:hover .card-text {
+  position: absolute;
+  display: block;
+  width: 100%:
+  bottom: 0;
+  left: 0;
+}
+
+.card-element.active,
+.card-element:hover {
+    visibility: visible;
+    background-image: none;
+  }
+
+  footer {
+    text-align: center;
+    color: white;
+  }
